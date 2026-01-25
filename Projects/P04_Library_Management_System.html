@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="P04_Library_Management_System.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>📚 Library</h2>
+        <button onclick="showSection('addBook')">1. Add Book</button>
+        <button onclick="showSection('listBooks')">2. List Books</button>
+        <button onclick="showSection('searchBook')">3. Search Book</button>
+        <button onclick="showSection('addMember')">4. Register Member</button>
+        <button onclick="showSection('listMembers')">5. List Members</button>
+        <button onclick="showSection('issueBook')">6. Issue Book</button>
+        <button onclick="showSection('returnBook')">7. Return Book</button>
+        <button onclick="showReports()">8. Reports</button>
+        <button onclick="showStatistics()">9. Statistics</button>
+        <button onclick="showHelp()">10. Help</button>
+        <button onclick="toggleDarkMode()">🌓 Dark/Light</button>
+    </aside>
+
+    <!-- Main + Footer Wrapper -->
+    <div class="main-wrapper">
+        <main class="main">
+            <header>
+                <h1>Library Management System</h1>
+                <p>Manage your Library</p>
+            </header>
+
+            <section id="content" class="card">
+                Select an option from the menu.
+            </section>
+
+            <!-- Chart container -->
+            <section class="card" id="chartSection" style="margin-top:20px; display:none;">
+                <canvas id="libraryChart"></canvas>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Made with <span>❤️</span> by Sudip Pokhrel
+        </footer>
+    </div>
+
+</div>
+
+<script src="P04_Library_Management_System.js"></script>
+</body>
+</html>
