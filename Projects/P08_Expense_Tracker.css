@@ -1,0 +1,126 @@
+:root {
+  --bg: #f4f6f8;
+  --card: #fff;
+  --text: #333;
+  --income: #2ecc71;
+  --expense: #e74c3c;
+  --primary: #4CAF50;
+}
+
+body.dark {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: var(--card);
+  width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.balance {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input, select {
+  flex: 1 1 100px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: var(--primary);
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+li.income {
+  background: rgba(46, 204, 113, 0.1);
+  color: var(--income);
+}
+
+li.expense {
+  background: rgba(231, 76, 60, 0.1);
+  color: var(--expense);
+}
+
+li span {
+  flex: 1;
+}
+
+.actions button {
+  margin-left: 5px;
+  font-size: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  color: #333;
+}
+
+canvas {
+  width: 100% !important;
+  max-width: 100%;
+}

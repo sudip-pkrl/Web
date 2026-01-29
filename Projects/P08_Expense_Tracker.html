@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="P08_Expense_Tracker.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 Expense Tracker</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="balance">
+      <h2>Balance: $<span id="balance">0</span></h2>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="desc" placeholder="Description">
+      <input type="number" id="amount" placeholder="Amount">
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <select id="category">
+        <option value="general">General</option>
+        <option value="food">Food</option>
+        <option value="rent">Rent</option>
+        <option value="salary">Salary</option>
+        <option value="other">Other</option>
+      </select>
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="transactions"></ul>
+
+    <canvas id="chart" height="200"></canvas>
+  </div>
+
+  <script src="P08_Expense_Tracker.js"></script>
+</body>
+</html>
