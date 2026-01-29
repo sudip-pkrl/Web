@@ -1,0 +1,94 @@
+/* Center the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family: sans-serif;
+}
+
+/* Clock container */
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 12px solid #fff;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #2c2c2c, #1a1a1a);
+  box-shadow: 0 0 30px rgba(0,0,0,0.5), inset 0 0 20px rgba(255,255,255,0.1);
+}
+
+/* Clock center dot */
+.center {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+/* Clock hands */
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 50%;
+  border-radius: 3px;
+}
+
+.hour {
+  width: 30%;
+  height: 8px;
+  background: #f1c40f;
+  z-index: 3;
+}
+
+.minute {
+  width: 45%;
+  height: 6px;
+  background: #3498db;
+  z-index: 2;
+}
+
+.second {
+  width: 50%;
+  height: 3px;
+  background: #e74c3c;
+  z-index: 1;
+}
+
+/* Tick marks */
+.ticks .tick {
+  position: absolute;
+  width: 2px;
+  top: 50%;
+  left: 50%;
+  transform-origin: center 100%;
+  background: #fff;
+}
+
+.ticks .tick.hour {
+  height: 15px; 
+  background: #f1c40f;
+}
+
+.ticks .tick.minute {
+  height: 7px; 
+}
+
+/* Numbers */
+.numbers .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}

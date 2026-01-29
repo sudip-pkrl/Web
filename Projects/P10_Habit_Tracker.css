@@ -1,0 +1,233 @@
+:root {
+  --accent: #00ffff;
+  --streak-color: #4ade80;
+  --bg: #fdfcfb;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --radius: 12px;
+  --shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.4s ease;
+}
+
+/* Body */
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 40px 20px 80px; /* space for footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #111827;
+}
+
+/* Container */
+.container {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 30px;
+  width: 100%;
+  max-width: 850px;
+  border: 1px solid var(--border);
+}
+
+/* Add Form */
+.add {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+input[name="habit"] {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: #f9fafb;
+  font-size: 1rem;
+}
+
+input[name="habit"]:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: #fff;
+}
+
+.add-btn {
+  background: var(--accent);
+  border: none;
+  color: #111827;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* Weekdays Row */
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 6px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* Habits List */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Single Habit Card */
+.habit {
+  background: #f9fafb;
+  border-radius: var(--radius);
+  padding: 18px;
+  border: 1px solid var(--border);
+}
+
+/* Habit Header */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.habit h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.icon {
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.icon:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Days row */
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.day {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: #f3f4f6;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.day.done {
+  background: var(--accent);
+  color: #111827;
+  font-weight: 600;
+}
+
+.day.today {
+  border: 2px solid var(--accent);
+}
+
+.day.streak {
+  background: var(--streak-color) !important;
+}
+
+/* Progress Bar */
+.progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.progress {
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.4s ease;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Empty State */
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 40px;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: auto;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Heart Beat Animation (moderate speed) */
+.heart {
+  display: inline-block;
+  animation: heartbeat 1.2s infinite;
+  transform-origin: center center;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.25); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.25); }
+}
