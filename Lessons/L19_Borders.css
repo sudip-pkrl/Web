@@ -1,0 +1,25 @@
+h1{
+    /* border-style: solid;
+    border-style: dashed;
+    border-style: dotted;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    border-style: none; */
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: aquamarine;
+    border-radius: 20px;
+}
+
+p{
+    border-bottom: 3px solid red;
+    border-top: 3px solid yellow;
+    border-left: 3px dotted orange;
+    border-right:3px dotted green;
+
+    border-radius: 10px;
+} 
