@@ -1,0 +1,16 @@
+h1{
+    /* font-family: verdana, arial; */
+    font-family: "playwrite nz guides";
+}
+p{
+    font-family: "lucida console","courrier new";
+    
+    /* font-size: 16px; */
+    font-size: 1em;
+    
+    /* font-weight: normal; */
+    font-weight:bold;
+    
+    /* font-style: normal; */
+    font-style: italic;
+}
