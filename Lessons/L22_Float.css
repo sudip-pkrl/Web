@@ -1,0 +1,20 @@
+body{
+    border: 3px solid;
+    display: flow-root;
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    float: left;
+    margin-right: 10px;
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    float:right;
+    margin-left: 10px;
+}
