@@ -1,0 +1,23 @@
+h1{
+    text-shadow: 3px 3px 3px aqua;
+} 
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    box-shadow:3px 3px 5px;
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    box-shadow:3px 3px 5px;
+}
+
+#box3{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    box-shadow:3px 3px 5px aqua;
+}
