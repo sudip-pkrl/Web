@@ -1,0 +1,42 @@
+#div1{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+#span1{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+#div2{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+#span2{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+#div3{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+#span3{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
